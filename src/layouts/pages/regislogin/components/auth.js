@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useUserContext } from "../context/userContext";
-import Signin from "./signin";
-import Signup from "./signup";
+import { useUserContext } from "layouts/pages/regislogin/context/userContext";
+import Signin from "layouts/pages/regislogin/components/signin";
+import Signup from "layouts/pages/regislogin/components/signup";
 
 const Auth = () => {
   const [index, setIndex] = useState(false);
