@@ -40,8 +40,8 @@ function Presentation() {
         routes={routes}
         action={{
           type: "external",
-          route: "/regislogin",
-          label: "sing in",
+          route: "https://www.creative-tim.com/product/material-kit-react",
+          label: "free download",
           color: "info",
         }}
         sticky
