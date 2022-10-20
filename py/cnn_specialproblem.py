@@ -31,14 +31,12 @@ from keras.regularizers import l1
 from keras.layers import Dropout
 from tensorflow.keras import optimizers
 
-from google.colab import drive
-
-drive.mount('/content/drive')
+ 
 
 import os
 import zipfile
 
-local_zip = 'drive/MyDrive/digital/dataset.zip'
+local_zip = './dataset.zip'
 zip_ref = zipfile.ZipFile(local_zip, 'r')
 zip_ref.extractall('.')
 zip_ref.close()
@@ -262,13 +260,11 @@ custom_model = getCustomModel(loaded_model)
 
 save_model(custom_model,"model.json","model.h5")
 
-for x, y in thisdict.items():
-  print(x, y)
-
+ 
 # Commented out IPython magic to ensure Python compatibility.
-from google.colab import files
-uploaded = files.upload()
-filename = next(iter(uploaded))
+ 
+# uploaded = files.upload()
+filename = './dataset/train/anthracnose/anthracnose001.jpg'
 img = image.load_img(filename , target_size=(224, 224))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
@@ -282,10 +278,8 @@ import matplotlib.image as mpimg
 img = mpimg.imread(filename)
 imgplot = plt.imshow(img)
 
-for x, y in thisdict.items():
-  print(x, y)
 
-uploaded.keys()
+# uploaded.keys()
 
 print(img)
 
