@@ -38,12 +38,6 @@ function Presentation() {
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
         sticky
       />
       <DIPBox
@@ -146,13 +140,11 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Testimonials />
-        <Download />
+       
+       
        
       </Card>
-      <DIPBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </DIPBox>
+     
     </>
   );
 }

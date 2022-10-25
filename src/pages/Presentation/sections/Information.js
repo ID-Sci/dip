@@ -29,21 +29,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    ทดลอง
                     <br />
-                    diseases in plants
+                    ตรวจสอบโรคพืช
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="ทดลองการใช้งาน ตรวจจสอบโรคพืช 24 โรค ในพืชตัวอย่างพืช 5 ชนิด"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="ตรวจจสอบโรคพืช"
+                description="คุณสามารถทดลองทดสอบโมเดลทดลอง"
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "เริ่มทดสอบได้เลย",
                 }}
               />
             </RotatingCard>
@@ -52,33 +52,32 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="search"
+                  title="ตรวจสอบโรคพืช"
+                  description="ระบบสามารถแยกโรคพืช และสามารถแยกประเภทพืชต่างๆด้วย AI"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="adb"
+                  title="โรคพืช"
+                  description="มีข้อมูลโรคพืชกว่า 24 ชนิด"
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="medication"
+                  title="ข้อมูลยา"
+                  description="รายระเอียดตัวยาที่มีการอ้างอิงถึง"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="spa"
+                  title="วิธีการดูแล"
+                  description="การดูแลพืชที่เราต้องการ"
                 />
               </Grid>
             </Grid>

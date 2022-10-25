@@ -24,7 +24,7 @@ function DesignBlocks() {
       <Grid item xs={12} lg={3}>
         <DIPBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
           <DIPTypography variant="h3" fontWeight="bold" mb={1}>
-            {title}
+            {'พืช'}
           </DIPTypography>
           <DIPTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
             {description}
